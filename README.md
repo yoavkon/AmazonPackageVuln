@@ -11,10 +11,9 @@ vulnerabilities (such as the NIST NVD)
     - Check kernel version using `uname -r`
     - Use `rpm -qa` to list all packages and versions
     - Use `osquery` to query installed software: [osquery Python module](https://pypi.org/project/osquery/)
-    - 
 3. Compare these versions to a database
-    - Use Snyk API
-    - Use NIST NVD API
+    - Use Snyk API [Snyk DB](https://security.snyk.io/)
+    - Use [NIST NVD API](https://nvd.nist.gov/developers/vulnerabilities)
     - Use Amazon Linux Security Center [ALAS](https://alas.aws.amazon.com/alas2.html)
 
 * Amazon apparently uses their own repos for yum
