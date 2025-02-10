@@ -3,7 +3,7 @@ A simple Python script that checks the version of certain
 packages and compares them to a known database of
 vulnerabilities (such as the NIST NVD)
 
-# Notes
+# Initial Notes
 1. Virtual machine running Amazon Linux 2
     - EC2 on the cloud running remotely
     - VirtualBox machine running locally
@@ -46,6 +46,9 @@ Here is an example of an API request using the CPE standard:
 curl 'https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=cpe:2.3:o:freebsd:freebsd:3.5.1'
 ```
 The format looks something like this: `cpe:2.3:o:vendor:product:version`
+This format is required for NVD, however it is tricky to convert from an RPM package to a CPE.
+I ended up finding a different API, which allows to look for vulnerabilities in specific packages.
+
 
 
 ```bash
